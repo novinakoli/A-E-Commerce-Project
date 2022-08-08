@@ -1,0 +1,104 @@
+.sixcategory {
+    text-align: center;
+    color: rgb(203, 208, 218);
+}
+.sixbuttons {
+    text-align: end;
+    margin: 9px;
+}
+.sixbuttonthirty {
+    background-color: white;
+    color: rgb(209, 0, 36);
+    border: 2px solid rgb(209, 0, 36);
+    height: 30px;
+}
+.sixbuttonsnew {
+    height: 30px;
+}
+.sixnewbutton {
+    background-color:rgb(209, 0, 36);
+    color: white;
+    border: 2px solid rgb(209, 0, 36);
+}
+
+.sixh6 {
+    text-align: center;
+    color: black;
+}
+.sixspan{
+    text-align: center;
+}
+.spansixone {
+    font-size: 23px;
+    font-weight: bold;
+    color: rgb(209, 0, 36);
+    text-align: center;
+}
+.sixspantwo {
+    color: rgb(141, 154, 177);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.starfill {
+    margin: 3px auto;
+    position: relative;
+    text-align: center;
+}
+
+.starfill::after {
+    content: "";
+    position: absolute;
+    display: block;
+    background: rgb(226, 228, 231);
+    width: 105px;
+    height: 2px;
+    left: 0;
+    top: 57%;
+}
+
+.starfill::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background: rgb(226, 228, 231);
+    width: 105px;
+    height: 2px;
+    right: 0;
+    top: 57%;
+}
+
+.sixheart {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.sixhearti {
+    color: black !important;
+}
+
+.sixaddtocartmainpart {
+    text-align: center;
+    padding-top: 24px;
+    background: black;
+    padding-bottom: 24px;
+    width: 22rem;
+}
+
+.sixaddtocartbutton {
+    border-radius: 21px;
+    padding: 8px;
+    width: 65%;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(209, 0, 36);
+}
+.hrfive {
+    margin: 14px;
+    height: 2px;
+    background: rgb(226, 228, 231);
+}
+i {
+    color: rgb(209, 0, 36);
+}

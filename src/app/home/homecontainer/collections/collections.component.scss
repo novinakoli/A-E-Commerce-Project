@@ -1,0 +1,35 @@
+.fourthshape {
+    position: absolute;
+    z-index: 12;
+}
+
+.fourthshapecover {
+    width: 22.6em;
+    height: 361px;
+    background: linear-gradient(to right bottom, rgb(209 0 36 / 81%) 58%, transparent 50%);
+    padding-left: 33px;
+    padding-top: 62px;
+    color: white;
+}
+
+.shapecover span {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.shapecover label {
+    font-size: 15px;
+}
+
+.shapecovericon {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link {
+    height: 33px;
+    padding: 0;
+    padding-top: 8px;
+    color: rgba(0, 0, 0, .9);
+}
+

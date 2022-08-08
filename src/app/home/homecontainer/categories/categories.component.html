@@ -1,0 +1,38 @@
+<div class="card" style="width: 22rem;">
+    <div class="sixbuttons sixbuttonsnew" *ngIf="!item.is30Per && !item.isNew">
+                          
+    </div>
+    <!-- {{item|json}} --pipe -->
+    <div class="sixbuttons" *ngIf="item.is30Per || item.isNew">
+        <span *ngIf="item.is30Per">
+            <button class="sixbuttonthirty">-30%</button>
+        </span>
+        <span *ngIf="item.isNew">
+            <button class="sixnewbutton">NEW</button>
+        </span>
+    </div>
+    <img [src]="item.image" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h6 class="card-title sixcategory">CATEGORY</h6>
+        <h6 class="sixh6">{{item.title}}</h6>
+        <div class="sixspan">
+            <span class="spansixone">$980.00</span>
+            <span class="sixspantwo">$990.00</span>
+        </div>
+        <div class="starfill" *ngIf="item.isStarVisible">
+            <i [ngClass]="item.noOfStars >= 1? 'bi bi-star-fill': 'bi bi-star'"></i>
+            <i [ngClass]="item.noOfStars >= 2? 'bi bi-star-fill': 'bi bi-star'"></i>
+            <i [ngClass]="item.noOfStars >= 3? 'bi bi-star-fill': 'bi bi-star'"></i>
+            <i [ngClass]="item.noOfStars >= 4? 'bi bi-star-fill': 'bi bi-star'"></i>
+            <i [ngClass]="item.noOfStars >= 5? 'bi bi-star-fill': 'bi bi-star'"></i>
+        </div>
+        <div class="hrfive" *ngIf="!item.isStarVisible">
+
+        </div>
+        <div class="sixheart">
+            <i class="bi bi-heart sixhearti"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+            <i class="bi bi-arrow-left-right sixhearti"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+            <i class="bi bi-eye sixhearti"></i>
+        </div>
+    </div>
+</div>

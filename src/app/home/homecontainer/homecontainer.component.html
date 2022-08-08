@@ -1,0 +1,80 @@
+<div class="forth afterhome">
+    <div class="row">
+        <div class="col-md-3" *ngFor="let item of collections;">
+            <app-collections [title]="item.title" [image]="item.image"></app-collections>
+        </div>
+    </div>
+</div>
+
+<div class="five">
+    <div class="row fifthrow">
+        <ng-container *ngFor="let item of sub_navigation;">
+            <app-subnavigation [title]="item.title"></app-subnavigation>
+        </ng-container>
+    </div>
+</div>
+
+
+<div class="six">
+    <div class="row" style="margin-bottom: 3em">
+        <div class="col-md-3" *ngFor="let item of categories;">
+            <app-categories [item]="item"></app-categories>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="seven">
+    <div class="sevensecond">
+        <div class="row sevenrow2">
+            <div class="col-md-3 circle">
+                <div class="spanone">02</div>
+                <div class="spantwo ">DAYS</div>
+            </div>
+            <div class="col-md-3 circle">
+                <div class="spanone">10</div>
+                <div class="spantwo">HOURS</div>
+            </div>
+            <div class="col-md-3 circle">
+                <div class="spanone">34</div>
+                <div class="spantwo">MINS</div>
+            </div>
+            <div class="col-md-3 circle">
+                <div class="spanone">60</div>
+                <div class="spantwo">SEC</div>
+            </div>
+        </div>
+        <h6 class="rowh61">HOT DEAL THIS WEEK</h6>
+        <h6 class="rowh62">NEW COLLECTION UPTO 50% OFF</h6>
+        <button class="button">SHOP NOW</button>
+    </div>
+    <div class="sevenrow1">
+        <img src="assets/hotdeal.png" class="severimg" alt="">
+    </div>
+</div>
+
+<div class="five">
+    <div class="row fifthrow">
+        <ng-container *ngFor="let item of sub_navigation2;">
+            <app-subnavigation [title]="item.title"></app-subnavigation>
+        </ng-container>
+    </div>
+</div>
+
+<div class="six">
+    <div class="row" style="margin-bottom: 3em">
+        <div class="col-md-3" *ngFor="let item of categories2;">
+            <app-categories [item]="item"></app-categories>
+        </div>
+    </div>
+</div>
+
+<div class="ten">
+    <div class="row">        
+        <div class="col-md-4" *ngFor="let item of topproducts">
+            <app-topproducts [item]="item"></app-topproducts>
+        </div>
+    </div>
+</div>
+
